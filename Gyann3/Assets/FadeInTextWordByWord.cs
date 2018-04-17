@@ -11,6 +11,7 @@ public class FadeInTextWordByWord : MonoBehaviour {
     [SerializeField] private bool useTextText = false;
     [SerializeField] private float fadeSpeedMultiplier = 0.25f;
     [SerializeField] private bool fade;
+    GameObject Text4;
     private float colorFloat = 0.1f;
     private int colorInt;
     private int wordCounter = 0;
@@ -22,37 +23,46 @@ public class FadeInTextWordByWord : MonoBehaviour {
         {
             textToUse = GetComponent<Text>();
         }
-        if (useTextText)
+        if (useTextText )
         {
             textToShow = textToUse.text;
         }
         words = textToShow.Split(' ');
-        if (fade)
-        {
-            Fade();
-        }
+        
+            if (fade)
+            {
+                Fade();
+            }
     }
     private IEnumerator FadeInText()
     {
-        while (wordCounter < words.Length)
-        {
-            if (colorFloat < 1.0f)
+        //Text4 = GameObject.Find("Text4");
+        //Text4.SetActive(false);
+            while (wordCounter < words.Length)
             {
-                colorFloat += Time.deltaTime * fadeSpeedMultiplier;
-                colorInt = (int)(Mathf.Lerp(0.0f, 1.0f, colorFloat) * 255.0f);
-                textToUse.text = shownText + "<color=\"#FF0000" + string.Format("{0:X}", colorInt) + "\">" + words[wordCounter] + "</color>";
+                
+                
+                    //Debug.Log("haro");
+                    if (colorFloat < 1.0f)
+                    {
+                        colorFloat += Time.deltaTime * fadeSpeedMultiplier;
+                        colorInt = (int)(Mathf.Lerp(0.0f, 1.0f, colorFloat) * 255.0f);
+                        textToUse.text = shownText + "<color=\"#FF0000" + string.Format("{0:X}", colorInt) + "\">" + words[wordCounter] + "</color>";
+                    }
+                    else
+                    {
+                        colorFloat = 0.1f;
+                        shownText += words[wordCounter] + ' ';
+                        wordCounter++;
+                    }
+                
+                
+                yield return null;
             }
-            else
-            {
-                colorFloat = 0.1f;
-                shownText += words[wordCounter] + ' ';
-                wordCounter++;
-            }
-            yield return null;
-        }
     }
     public void Fade()
     {
-        StartCoroutine(FadeInText());
+
+            StartCoroutine(FadeInText());
     }
 }

@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: c5a6f4b39983dbf4fb157705352c5d2c
+timeCreated: 1523942923
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: g_roundkana
+  fontNames:
+  - g_roundkana
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
