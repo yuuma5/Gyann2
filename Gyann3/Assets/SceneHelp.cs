@@ -17,6 +17,7 @@ public class SceneHelp : MonoBehaviour
         {
             Debug.Log("koi");
             SceneManager.LoadScene("GameHelp2");//シーン切替
+
         }
 
     }

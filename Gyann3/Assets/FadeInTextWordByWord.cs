@@ -38,6 +38,7 @@ public class FadeInTextWordByWord : MonoBehaviour {
     {
         //Text4 = GameObject.Find("Text4");
         //Text4.SetActive(false);
+
             while (wordCounter < words.Length)
             {
                 

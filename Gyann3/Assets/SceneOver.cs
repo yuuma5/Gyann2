@@ -15,6 +15,7 @@ public class SceneOver : MonoBehaviour {
         {
             SceneManager.LoadScene("GameTitle");//シーン切替
 
+
         }
 	}
 }

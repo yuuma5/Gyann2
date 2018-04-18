@@ -15,6 +15,7 @@ public class Help2 : MonoBehaviour {
         if (Input.GetKeyDown("space")) 
         {
             SceneManager.LoadScene("GameMain");//シーン切替
+
         }
 		
 	}

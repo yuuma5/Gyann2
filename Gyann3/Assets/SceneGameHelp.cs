@@ -12,6 +12,7 @@ public class SceneGamehelp2 : MonoBehaviour
 	
 	// Update is called once per frame
 	void Update () {
+
 		
 	}
 }

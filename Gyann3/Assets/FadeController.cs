@@ -21,6 +21,7 @@ public class FadeController : MonoBehaviour
         green = fadeImage.color.g;
         blue = fadeImage.color.b;
         alfa = fadeImage.color.a;
+
     }
 
     void Update()

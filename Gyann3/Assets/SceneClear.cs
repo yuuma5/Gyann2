@@ -14,6 +14,7 @@ public class SceneClear : MonoBehaviour {
 	void Update () {
         if (Input.GetKeyDown("space"))
         {
+
             SceneManager.LoadScene("GameTitle");//シーン切替
         }
 	}

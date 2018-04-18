@@ -64,5 +64,6 @@ public class GameClearFeadText : MonoBehaviour {
     {
 
         StartCoroutine(FadeInText());
+
     }
 }
