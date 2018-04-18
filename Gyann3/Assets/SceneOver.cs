@@ -14,6 +14,7 @@ public class SceneOver : MonoBehaviour {
         if (Input.GetKeyDown("space"))
         {
             SceneManager.LoadScene("GameTitle");//シーン切替
+
         }
 	}
 }
