@@ -2,8 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;//シーンマネジメントを有効にする
-
-public class SceneClear : MonoBehaviour {
+public class SceneOver : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {

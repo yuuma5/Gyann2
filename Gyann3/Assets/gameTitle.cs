@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;//シーンマネジメントを有効にする
 
 public class gameTitle : MonoBehaviour {
 
@@ -10,7 +11,13 @@ public class gameTitle : MonoBehaviour {
 	}
 	
 	// Update is called once per frame
-	void Update () {
-		
-	}
+    void Update()
+    {
+        if (Input.GetKeyDown("space"))
+        {
+            Debug.Log("koi");
+            SceneManager.LoadScene("GameHelp");//シーン切替
+        }
+
+    }
 }
